@@ -1,0 +1,38 @@
+.iotabs-container{
+	overflow: hidden;
+	position: relative;
+}
+.iotabs{
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+	display: table;
+}
+.iotabs li{
+	display: table-cell;
+	vertical-align: top;
+	position: relative;
+}
+.iotabs li .text{
+	display: block;
+}
+.iotabs li.current{
+}
+.iotabs li.current .text{
+}
+.iotabs li:not(.current){
+}
+.iotabs-container a.scroll{
+	position: absolute;
+	top: 0;
+	display: block;
+	z-index: 10;
+}
+.iotabs-container a.scroll.left{
+	left: 0;
+}
+.iotabs-container a.scroll.right{
+	right: 0;
+}

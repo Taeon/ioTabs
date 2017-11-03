@@ -1,0 +1,46 @@
+.iotabs-container{
+	padding-top: 5px;
+	margin-bottom: -1px;
+}
+.iotabs{
+	border-collapse: separate;
+	border-spacing: 3px 0;
+	margin-left: -3px;
+	max-width: 100%;
+}
+.iotabs li{
+	padding-top: 10px;
+	background-color: white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border: 1px solid #e1e1e1;
+}
+.iotabs li .text{
+	padding: 4px 27px 10px;
+	font-weight: bold;
+	font-size: 1.6rem;
+	color: color: #919499;
+	cursor: pointer;
+}
+.iotabs li.current{
+	border-bottom-color: white;
+}
+.iotabs li.current:after{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border: 1px solid #e1e1e1;
+	border-bottom: none;
+	background-color: white;
+	position: absolute;
+	top: -6px;
+	left: -1px;
+	width: 100%;
+	height: 10px;
+	content: ' ';
+}
+.iotabs li.current .text{
+	border-bottom-color: white;
+}
+.iotabs li:not(.current){
+	color: #919499;
+}
