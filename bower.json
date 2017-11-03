@@ -1,8 +1,8 @@
 {
-  "name": "ioSelect",
-  "homepage": "https://github.com/Taeon/ioSelect",
-  "description": "A customisable replacement for the <select> element",
-  "main": "src/js/ioselect.js",
+  "name": "ioTabs",
+  "homepage": "https://github.com/Taeon/ioTabs",
+  "description": "Simple HTML/JS/CSS tabs",
+  "main": "src/js/iotabs.js",
   "keywords": [
     "javascript",
     "select"
