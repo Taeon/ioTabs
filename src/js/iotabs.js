@@ -57,6 +57,8 @@
 					}
 				}
 
+                this.element.addClass( 'iotabs-items' );
+
 				var tabs_html = '';
 				for( var h = 0; h < this.tab_items.length; h++ ){
 					var item = $( this.tab_items[ h ] );
@@ -96,6 +98,9 @@
                 // Add current class to clicked tab
 				this.SelectTab( $(event.target).closest( 'li' ).index() );
             },
+            on:function( event, func ){
+                return this.element.on( event, func );
+            },
 			SelectTab:function( index ){
                 var tab = $( this.tabs.find( 'li' )[ index ] );
                 // Clear class from all tabs
@@ -106,6 +111,7 @@
 				this.tab_items.removeClass( 'iotabs-current' );
                 // Add class to current item
 				$( this.tab_items[ index ]).addClass( 'iotabs-current' );
+                this.element.trigger( 'iotabs:change', [this.tab_items[ index ]] );
 			},
             onResize:function(){
                 this.tabs.find( ' > ul' ).css( {left:0} );
